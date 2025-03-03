@@ -1,15 +1,79 @@
 ---
 import MainLayout from "../layouts/MainLayout.astro";
-import Button from '../components/Button.astro';
 import Link from '../components/Link.astro';
 import { Image } from 'astro:assets';
 import thumbsup from "../assets/images/thumbsup.png";
+import Newsletter from "../components/Newsletter.astro";
 ---
-<MainLayout title="Titel">
-	<article>
-		<h1>Index overskrift</h1>
-		<Button>Klik!</Button>
-		<p>Link til <Link href="https://www.kea.dk" target="_blank">En anden side</Link></p>
-		<Image src={thumbsup} alt=""></Image>
-	</article>
+<MainLayout title="110 film">
+	<!-- Hero section -->
+	<section class="relative flex items-center justify-center text-center text-black mt-50">
+		<div class="absolute">
+			<h1 class="text-6xl font-extrabold uppercase tracking-wider">Det er ikke størrelsen, der tæller, <br> men øjeblikkene, vi fanger.</h1>
+			<h2 class="text-3xl font-bold uppercase tracking-wider mt-4">110 filmen – Beviset på, at størrelse ikke er alt</h2>
+			<p class="mt-4 text-lg leading-relaxed">Historie af Emilie B larsen & Chatgpt</p>
+		</div>
+	</section>
+
+	<!-- markedet -->
+	<section id="about-us" class="mt-40 px-4 py-8 bg-red-200 text-black">
+		<h2 class="text-3xl font-bold text-center uppercase tracking-wider">Den lille film, der ændrede alt </h2>
+		<div class="grid grid-cols-1 md:grid-cols-2 gap-4 mt-4">
+			<div>
+				<p class="text-lg leading-relaxed text-center max-w-2xl mx-auto">
+					I 1972 lancerede Kodak 110-filmen, et revolutionerende filmformat, der gjorde fotografering lettere end nogensinde. Det kompakte design og den brugervenlige kassettefilm gjorde det til et hit blandt både amatører og familier.
+				</p>
+			</div>
+			<div class="flex justify-center items-center">
+				<Image src={thumbsup} alt="110 film" class="rounded-lg shadow-lg" />
+			</div>
+		</div>
+	</section>
+
+	<!-- efterkrigstiden -->
+	<section id="about-us" class="mt-20 px-4 py-8 text-black">
+		<h2 class="text-3xl font-bold text-center uppercase tracking-wider">110-filmens skjulte mission</h2>
+		<p class="mt-4 text-lg leading-relaxed text-center max-w-2xl mx-auto">
+			Miniaturekameraer med 110-film blev brugt af CIA og KGB til hemmelig overvågning. De kunne nemt skjules i hverdagsgenstande som cigaretpakker, slips eller håndtasker, hvilket gjorde dem ideelle til at fotografere følsomme dokumenter og fjendens bevægelser.
+		</p>
+
+		<section class="mt-10 px-4 py-8 bg-gray-300 text-black rounded-lg shadow-lg">
+			<h3 class="text-2xl font-bold text-center uppercase tracking-wider">Den skjulte sandhed bag Muren</h3>
+			<p class="mt-4 text-lg leading-relaxed text-center max-w-2xl mx-auto">110-filmen og Berlins frihed</p>
+			<p class="mt-4 text-lg leading-relaxed text-center max-w-2xl mx-auto">
+				I slutningen af 1980'erne, mens Østblokken vaklede, voksede modstanden mod Berlinmuren. Men for at afsløre Østtysklands brutale regime over for verden var der brug for beviser – billeder, der viste undertrykkelsen bag Muren.
+			</p>
+			<p class="mt-4 text-lg leading-relaxed text-center max-w-2xl mx-auto">
+				En ung østtysk dissident ved navn Matthias Keller arbejdede i hemmelighed med en vesttysk journalist. Matthias havde adgang til områder langs Muren, hvor vagter uden tøven skød folk, der forsøgte at flygte. Med et 110-spionkamera skjult i sin jakke begyndte han at dokumentere brutaliteten. Han tog billeder af vagttårne, bevæbnede soldater. Østtyskere der flygtede og nogen der blev skudt.
+			</p>
+			<p class="mt-4 text-lg leading-relaxed text-center max-w-2xl mx-auto">
+				Han smuglede 110-filmrullerne ud gennem en hemmelig kanal til Vestberlin, hvor billederne blev offentliggjort i vestlige aviser. Disse afsløringer skabte internationalt pres på Østtyskland.
+			</p>
+			<p class="mt-4 text-lg leading-relaxed text-center max-w-2xl mx-auto">
+				Da Berlinmuren faldt den 9. november 1989, var det ikke kun folkemængdernes mod, der havde banet vejen – men også de små 110-filmruller, der havde fanget sandheden om livet bag Jerntæppet og åbnet verdens øjne.
+			</p>
+			<p class="mt-4 text-2xl leading-relaxed text-center max-w-2xl mx-auto">
+				"Frihed er altid friheden for dem, der tænker anderledes."
+			</p>
+			<p class="mt-4 text-lg leading-relaxed text-center max-w-2xl mx-auto">
+				Stephan Krawczyk, en østtysk sanger og forfatter - 1988
+			</p>
+		</section>
+	</section>
+
+	<!-- Familie -->
+	<section id="about-us" class="mt-20 px-4 py-8 bg-red-200 text-black">
+		<h2 class="text-3xl font-bold text-center uppercase tracking-wider">Familiekameraet </h2>
+		<p class="mt-4 text-lg leading-relaxed text-center max-w-2xl mx-auto">
+			Efterkrigstiden førte til en voksende forbrugerkultur, hvor 110-filmen hurtigt blev en uundværlig del af familielivet. Kameraet fangede alt fra fødselsdage og ferier til skolefotografering og hverdagsøjeblikke, der endte i familiealbummet. Det var så let at bruge, at selv børn kunne tage billeder, og de billige film gjorde det muligt for alle at bevare deres minder. </p>
+	</section>
+
+		<!-- konklusion -->
+		<section id="about-us" class="mt-20 px-4 py-8 bg-red-200 text-black">
+			<h2 class="text-3xl font-bold text-center uppercase tracking-wider">Størrelse er ikke alt </h2>
+			<p class="mt-4 text-lg leading-relaxed text-center max-w-2xl mx-auto">
+				I 1980'erne blev 110-filmen udfaset af 35 mm kameraer, men formatet lever videre blandt analoge entusiaster. Som pioner inden for lommekameraer var det en fast del af hverdagslivet i 70'erne og 80'erne, og en påmindelse om, at de bedste minder ikke kræver stort udstyr. 110-filmen viser, at det ikke handler om størrelsen, men om øjeblikkene, vi fanger.		</section>
+
+	<!-- Newsletter -->
+	<Newsletter />
 </MainLayout>
